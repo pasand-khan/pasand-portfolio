@@ -346,17 +346,6 @@ main { position: relative; z-index: 1; }
 
 .kicker { font-size: 14px; color: var(--text-soft); margin: 0 0 20px; letter-spacing: 0.01em; }
 
-.hero-photo {
-  display: block;
-  width: 160px; height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: 50% 30%;
-  border: 3px solid var(--accent);
-  margin: 0 0 24px;
-}
-@media (max-width: 599px) { .hero-photo { width: 120px; height: 120px; } }
-
 .hero-title {
   font-size: clamp(32px, 5vw, 52px);
   line-height: 1.14;
