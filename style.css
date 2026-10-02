@@ -801,15 +801,13 @@ main { position: relative; z-index: 1; }
   .seal-initials { font-size: 30px; }
 }
 
-@media (max-width: 1079px) {
-  /* Work photos carry an inline 430x390 size; on phones and tablets that
-     squashes them. Fill the 4:3 frame and crop instead of stretching. */
-  .photo-slot { overflow: hidden; }
-  .photo-slot img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-  }
+/* Work photos carry an inline 430x390 size, which squashes them whenever
+   the frame is a different size. Fill the 4:3 frame and crop instead. */
+.photo-slot { overflow: hidden; }
+.photo-slot img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
 }
 
 @media (max-width: 639px) {
