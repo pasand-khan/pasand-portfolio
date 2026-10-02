@@ -346,6 +346,17 @@ main { position: relative; z-index: 1; }
 
 .kicker { font-size: 14px; color: var(--text-soft); margin: 0 0 20px; letter-spacing: 0.01em; }
 
+.hero-photo {
+  display: block;
+  width: 160px; height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border: 3px solid var(--accent);
+  margin: 0 0 24px;
+}
+@media (max-width: 599px) { .hero-photo { width: 120px; height: 120px; } }
+
 .hero-title {
   font-size: clamp(32px, 5vw, 52px);
   line-height: 1.14;
@@ -452,7 +463,7 @@ main { position: relative; z-index: 1; }
 .seal-initials {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 46px;
+  font-size: 28px;
   fill: var(--text);
   opacity: 0;
   animation: fadeIn 0.6s var(--ease) 1.9s forwards;
@@ -600,7 +611,7 @@ main { position: relative; z-index: 1; }
   padding: 26px 0;
   border-top: 1px solid var(--line);
 }
-.journal-list li:last-child { border-bottom: 1px solid var(--line); }
+.journal-list > li:last-child { border-bottom: 1px solid var(--line); }
 @media (min-width: 640px) {
   .journal-entry { grid-template-columns: 150px 1fr; gap: 28px; }
 }
@@ -792,3 +803,12 @@ main { position: relative; z-index: 1; }
   }
   .contact-form { display: none; }
 }
+
+/* Real photos inside the work slots fill the 4:3 frame instead of overflowing it */
+.photo-slot { overflow: hidden; }
+.photo-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.journal-reflection ul { margin: 6px 0 0; padding-left: 20px; }
+.journal-reflection li { margin-bottom: 4px; }
+
+.contact-links .whatsapp-link { display: inline-flex; align-items: center; gap: 8px; }
