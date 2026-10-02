@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasand Khan — Teaching Internship Portfolio</title>
+    <meta
+      name="description"
+      content="Pasand Khan's teaching internship portfolio — placement details, daily journal, samples of work, and supervisor evaluation."
+    />
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Pasand Khan's Portfolio — Teaching Internship"
+    />
+    <meta
+      property="og:description"
+      content="Placement details, daily journal, samples of work, and supervisor evaluation from a 100-hour teaching internship."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Pasand Khan's Portfolio — Teaching Internship"
+    />
+    <meta
+      name="twitter:description"
+      content="Placement details, daily journal, samples of work, and supervisor evaluation from a 100-hour teaching internship."
+    />
+    <meta name="theme-color" content="#16231C" id="theme-color-meta" />
+
+    <!-- ============================================================
+     DEMO DATA NOTICE
+     Everything below marked DEMO is placeholder content standing in
+     for Pasand Khan's real internship details. Search this file for
+     "DEMO" to find every spot that needs the real information.
+     ============================================================ -->
+
+    <!-- Sets the theme before first paint, so there's no flash of the wrong
+     colour scheme. Reads a saved choice first, then falls back to the
+     visitor's OS-level light/dark preference.
+-->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("pasand-theme");
+          var theme =
+            saved ||
+            (window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark");
+          if (theme === "light")
+            document.documentElement.setAttribute("data-theme", "light");
+        } catch (e) {
+          /* localStorage unavailable — default (dark) is fine */
+        }
+      })();
+    </script>
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F2E27'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23E3A83B' stroke-width='2'/%3E%3Ctext x='16' y='20' font-family='Georgia,serif' font-size='11' font-weight='700' fill='%23E3A83B' text-anchor='middle'%3EPK%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Karla:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      type="button"
+      aria-label="Switch to whiteboard (light) mode"
+      aria-pressed="false"
+    >
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle
+          cx="12"
+          cy="12"
+          r="4.5"
+          stroke="currentColor"
+          stroke-width="1.8"
+        />
+        <path
+          d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+        />
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+          d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <div class="paper-bg" aria-hidden="true"></div>
+
+    <!-- ============ SPEC RAIL (desktop section index) ============ -->
+    <nav class="spec-rail" aria-label="Page sections">
+      <div class="rail-brand">
+        <span class="brand-name">Pasand Khan</span>
+        <span class="brand-tag">Portfolio</span>
+      </div>
+      <ol>
+        <li data-target="hero">
+          <a href="#hero"
+            ><span class="rail-num">00</span
+            ><span class="rail-label">Start</span></a
+          >
+        </li>
+        <li data-target="profile">
+          <a href="#profile"
+            ><span class="rail-num">01</span
+            ><span class="rail-label">Profile</span></a
+          >
+        </li>
+        <li data-target="internship">
+          <a href="#internship"
+            ><span class="rail-num">02</span
+            ><span class="rail-label">Placement</span></a
+          >
+        </li>
+        <li data-target="journal">
+          <a href="#journal"
+            ><span class="rail-num">03</span
+            ><span class="rail-label">Journal</span></a
+          >
+        </li>
+        <li data-target="work">
+          <a href="#work"
+            ><span class="rail-num">04</span
+            ><span class="rail-label">My work</span></a
+          >
+        </li>
+        <li data-target="evaluation">
+          <a href="#evaluation"
+            ><span class="rail-num">05</span
+            ><span class="rail-label">Evaluation</span></a
+          >
+        </li>
+        <li data-target="contact">
+          <a href="#contact"
+            ><span class="rail-num">06</span
+            ><span class="rail-label">Contact</span></a
+          >
+        </li>
+      </ol>
+    </nav>
+
+    <!-- ============ MOBILE HEADER ============ -->
+    <header class="mobile-header">
+      <a href="#hero" class="brand">
+        <span class="brand-name">Pasand Khan</span>
+        <span class="brand-tag">Portfolio</span>
+      </a>
+      <button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="Open menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Page sections (mobile)">
+      <a href="#profile">Profile</a>
+      <a href="#internship">Placement</a>
+      <a href="#journal">Journal</a>
+      <a href="#work">My work</a>
+      <a href="#evaluation">Evaluation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section id="hero" class="section hero">
+        <div class="hero-inner">
+          <p class="kicker">Internship portfolio — teaching placement</p>
+          <h1 class="hero-title">
+            Six weeks in a Grade 7th, 8th,9th and 10th classrooms —<br />
+            this is what I made of them.
+          </h1>
+          <p class="hero-sub">
+            <!-- DEMO: replace with real bio line -->
+            I'm Pasand Khan, a BS English Language Teaching student. This
+            portfolio covers my 100-hour teaching internship at Government syed
+            panah Ali Shah Model School, Jamshoro, under the mentorship of
+            <strong
+              style="
+                font-family: Georgia, &quot;Times New Roman&quot;, Times, serif;
+              "
+              >Respected Ma'am Zahida</strong
+            >.
+          </p>
+
+          <dl class="hero-stats">
+            <div>
+              <dt>Hours logged</dt>
+              <dd>100 / 100</dd>
+            </div>
+            <div>
+              <dt>Attendance</dt>
+              <dd>96%</dd>
+            </div>
+            <div>
+              <dt>Class taught</dt>
+              <dd>Grade 7 to 10· English</dd>
+            </div>
+          </dl>
+
+          <div class="hero-actions">
+            <a
+              href="#journal"
+              class="btn btn-primary"
+              style="border-radius: 25px"
+              >Read my journal</a
+            >
+            <a href="#contact" class="btn btn-ghost" style="border-radius: 25px"
+              >Contact me</a
+            >
+            <button
+              type="button"
+              class="btn-text"
+              id="print-btn"
+              style="border-radius: 25px"
+            >
+              Print / save as PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-seal" aria-hidden="true">
+          <svg id="seal-svg" viewBox="0 0 300 320" fill="none">
+            <circle
+              class="ring ring-outer"
+              cx="150"
+              cy="140"
+              r="108"
+              pathLength="100"
+            ></circle>
+            <circle class="ring ring-inner" cx="150" cy="140" r="92"></circle>
+            <text class="seal-initials" x="150" y="150" text-anchor="middle">
+              Pasand
+              Khan            </text>
+            <text class="seal-caption" x="150" y="178" text-anchor="middle">
+              Teaching Internship
+            </text>
+            <!-- medal ribbon -->
+            <polygon
+              class="ribbon"
+              points="120,232 120,300 150,278 180,300 180,232"
+            ></polygon>
+          </svg>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span class="scroll-cue-line"></span>
+          <span>Scroll</span>
+        </div>
+      </section>
+
+      <!-- ============ PROFILE ============ -->
+      <section id="profile" class="section profile">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2>Student profile</h2>
+        </div>
+
+        <div class="profile-body reveal">
+          <div class="avatar" aria-hidden="true">PK</div>
+
+          <div class="profile-text">
+            <p>
+              <!-- DEMO: replace with real bio -->
+              I'm a sixth-semester BS English Language Teaching student. I chose
+              to do my internship in a real classroom rather than an office,
+              because the part of teaching I was least sure about was standing
+              in front of thirty students and actually holding their attention —
+              the theory I'd studied only tells you so much about that.
+            </p>
+            <p>
+              Before this placement I had guest-taught a handful of one-off
+              sessions for a tuition centre, but this was the first time I was
+              responsible for an actual class across a full term of lessons —
+              planning, marking, and being answerable to a supervisor for it.
+            </p>
+
+            <dl class="fact-grid">
+              <div>
+                <dt>Institute</dt>
+                <dd>Institute of English Language &amp; Literature</dd>
+              </div>
+              <div>
+                <dt>Discipline</dt>
+                <dd>BS English Language Teaching</dd>
+              </div>
+              <div>
+                <dt>Placement</dt>
+                <dd>Government syed panah Ali Shah Model School jamshoro</dd>
+              </div>
+              <div>
+                <dt>Supervisor</dt>
+                <dd>Ma'am Zahida Principal</dd>
+              </div>
+              <div>
+                <dt>Coordinator</dt>
+                <dd>Ma'am Bakhtawar jaleel</dd>
+              </div>
+              <div>
+                <dt>Duration</dt>
+                <dd>6 weeks · 100 hours</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INTERNSHIP: PLACEMENT + OBJECTIVES ============ -->
+      <section id="internship" class="section internship">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2>Placement &amp; objectives</h2>
+        </div>
+
+        <div class="internship-grid reveal">
+          <div class="placement-card">
+            <h3>Placement details</h3>
+            <dl class="placement-list">
+              <div>
+                <dt>Organization</dt>
+                <dd>Government Syed Panah Ali Shah Model School Jamshoro</dd>
+              </div>
+              <div>
+                <dt>Role</dt>
+                <dd>Teaching Intern</dd>
+              </div>
+              <div>
+                <dt>Class / subject</dt>
+                <dd>Grade 7-10, English</dd>
+              </div>
+              <div>
+                <dt>Duration</dt>
+                <dd>6 weeks (100 hours total)</dd>
+              </div>
+              <div>
+                <dt>Supervisor</dt>
+                <dd>Ma'am Zahida Principal</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="objectives-card">
+            <h3>What I set out to learn</h3>
+            <ul class="objectives-list">
+              <li>
+                In order to develop English teaching skills and Improve my
+                communication with students for effective learning and convey
+                lessons actual context
+              </li>
+              <li>Plan and deliver full lessons on my own, not just assist</li>
+              <li>
+                Practice classroom management with a real group of 30+ students
+              </li>
+              <li>
+                Apply lesson-planning theory from coursework to an actual weekly
+                timetable
+              </li>
+              <li>
+                Understand how a school day runs beyond the classroom itself
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ JOURNAL: DAILY LOG + REFLECTIONS ============ -->
+      <section id="journal" class="section journal">
+        <div class="section-head">
+          <span class="section-num">16</span>
+          <h2>Daily journal</h2>
+        </div>
+        <p class="section-intro"></p>
+
+        <ol class="journal-list">
+          <!-- DEMO: replace all 5 entries with real log/reflective-journal data -->
+          <li class="journal-entry reveal">
+            <div class="journal-day">
+              <span class="day-num">Day 01</span>
+              <span class="day-date">Wed, Week 1</span>
+            </div>
+            <div class="journal-content">
+              <p class="journal-activity">
+                During an English class observation, the intern noted that while
+                7th-grade students displayed confidence during
+                self-introductions, they struggled to comprehend deeper
+                questions due to weak core language skills. To remedy this, the
+                intern implemented real-world examples and interactive group
+                chart-making activities over a two-hour session. Additionally,
+                the intern adapted their strategies to teach a similarly
+                struggling 8th-grade class on the same day. Ultimately, by
+                adjusting to the students' backgrounds and leveraging their
+                cooperation, the intern successfully engaged both classes,
+                making the day highly rewarding and amazing.
+              </p>
+              <p class="journal-reflection">
+                <span class="reflection-tag">What I learned — Reflection</span>
+                <ul>
+                  <li> Spot
+                Disengagement Early: Watch for visual cues like confused looks
+                or vague answers to know when a method isn't working</li>
+                <li>Lead
+                with Examples: Share concrete examples first to build a clear
+                mental framework before introducing complex skills</li>
+                <li>Bridge the
+                Gap for Beginners: Start with familiar scenarios when
+                introducing entirely new concepts to novice learner</li>
+                <li>Hook Student Interest: Design lesson entry points around relatable
+                topics to capture attention and boost engagement.</li>
+                </ul>
+              </p>
+            </div>
+          </li>
+          <li class="journal-entry reveal">
+            <div class="journal-day">
+              <span class="day-num">Day 02</span>
+              <span class="day-date">thur, Week 1 </span>
+            </div>
+            <div class="journal-content">
+              <p class="journal-activity">
+              Internship Logbook:Starting my second day was filled with happiness. I was assigned to the same 7th-grade class. I felt very happy to be given a second opportunity to teach them. I entered the classroom with the same question as the day before, but my way of asking it was completely different. When I asked them about the English language and its importance, they answered with enthusiasm. After they shared their answers, one of the students raised her hand and asked, "Sir, can you please give me permission? I want to talk about language skills." I felt very proud, and it was an amazing moment for me to see her initiative and listen to her words. I replied, "Yes, you may speak." She spoke very well and explained the four language skills.
+Afterward, I introduced new topics that are highly important for students at their level. The core areas of language we covered were grammar, vocabulary, and pronunciation. I discussed these three skills in detail. Before diving into what grammar actually is, along with vocabulary and pronunciation, I assigned them an activity. The task was to "Read a [lesson/passage]" and explain to me how they successfully understood the meaning of the lesson and how they pronounced the words.
+              </p>
+              <p class="journal-reflection">
+                <span class="reflection-tag">What I learned — Reflection</span>
+                <ul>
+                  <li>Day 2 Success: Returning to the same 7th-grade class brought high engagement through a reframed, enthusiastic introductory discussion on English.</li>
+                  <li>Student Leadership: A student-led presentation on the four language skills fostered a proud, student-centered classroom environment.</li>
+                  <li>Core Topics Introduced: The lesson transitioned into core linguistic areas, focusing on grammar, vocabulary, and pronunciation.</li>
+                  <li>Diagnostic Assessment: A practical reading activity was assigned to evaluate the students' baseline comprehension and pronunciation skills.</li>
+                </ul>
+              </p>
+            </div>
+          </li>
+          <li class="journal-entry reveal">
+            <div class="journal-day">
+              <span class="day-num">Day 15</span>
+              <span class="day-date">Wed, Week 3</span>
+            </div>
+            <div class="journal-content">
+              <p class="journal-activity">
+                Marked a full set of essay drafts and gave one-on-one feedback
+                during class.
+              </p>
+              <p class="journal-reflection">
+                <span class="reflection-tag">What I learned —</span> a specific
+                written note lands better than a grade on its own.
+              </p>
+            </div>
+          </li>
+
+          <!-- <li class="journal-entry reveal">
+            <div class="journal-day">
+              <span class="day-num">Day 22</span>
+              <span class="day-date">Tue, Week 4</span>
+            </div>
+            <div class="journal-content">
+              <p class="journal-activity">
+                Ran a group discussion activity and sat in on a parent-teacher
+                meeting.
+              </p>
+              <p class="journal-reflection">
+                <span class="reflection-tag">What I learned —</span> parents
+                want specifics, not "doing fine." I started keeping sharper
+                notes per student after this.
+              </p>
+            </div>
+          </li> -->
+
+          <!-- day 30 -->
+          <!-- <li class="journal-entry reveal">
+            <div class="journal-day">
+              <span class="day-num">Day 30</span>
+              <span class="day-date">Fri, Week 6</span>
+            </div>
+            <div class="journal-content">
+              <p class="journal-activity">
+                Taught the last lesson of the placement and got informal
+                feedback from Ma'am Ayesha.
+              </p>
+              <p class="journal-reflection">
+                <span class="reflection-tag">What I learned —</span> how much
+                more natural my pacing felt compared to Day 1 — that took the
+                whole six weeks, not one lesson.
+              </p>
+            </div>
+          </li> -->
+        </ol>
+      </section>
+
+      <!-- ============ SAMPLES OF WORK ============ -->
+      <section id="work" class="section work">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2>Samples of work</h2>
+        </div>
+        <p class="section-intro">
+          Evidence from the placement — photos and materials go in the slots
+          below.
+        </p>
+
+        <div class="work-grid">
+          <!-- DEMO: replace each photo-slot with a real <img>, keep the caption -->
+          <figure class="work-card reveal">
+            <div class="photo-slot">
+              <img src="./images/pasand-shb.jpeg" alt="" srcset="">
+              <!-- <span class="photo-note">Photo to be added</span> -->
+            </div>
+            <figcaption>
+              <h3>Lesson plan</h3>
+              <p>Grade 8 reading-comprehension lesson, week 2.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card reveal">
+            <div class="photo-slot">
+              <img src="./images/activity.jpeg" style="width: 430px; height: 390px;" alt="" srcset="">
+              <!-- <span class="photo-note">Photo to be added</span> -->
+            </div>
+            <figcaption>
+              <h3>Marked worksheet</h3>
+              <p>Sample of my written feedback style, week 3.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card reveal">
+            <div class="photo-slot">
+              <img src="./images/group-activity.jpeg" style="width: 430px; height: 390px;" alt="" srcset="">
+              <!-- <span class="photo-note">Photo to be added</span> -->
+            </div>
+            <figcaption>
+              <h3>Group activity</h3>
+              <p>A discussion exercise on persuasive writing, week 4.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card reveal">
+            <div class="photo-slot">
+              <img src="./images/bulletin-context.jpeg" style="width: 430px; height: 390px;" alt="" srcset="">
+              <!-- <span class="photo-note">Photo to be added</span> -->
+            </div>
+            <figcaption>
+              <h3>Bulletin board</h3>
+              <p>A vocabulary display I built with the class, week 5.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ SUPERVISOR EVALUATION ============ -->
+      <section id="evaluation" class="section evaluation">
+        <div class="section-head">
+          <span class="section-num">05</span>
+          <h2>Supervisor evaluation</h2>
+        </div>
+        <p class="section-intro">
+          Scored by my supervisor at the end of the placement, on the
+          department's standard 20-point rubric.
+        </p>
+
+        <div class="eval-body reveal">
+          <!-- DEMO: replace each score/max with the real evaluation -->
+          <ul class="eval-bars">
+            <li>
+              <div class="eval-row">
+                <span>Attendance &amp; punctuality</span
+                ><span class="eval-score">2 / 2</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="100"></div>
+              </div>
+            </li>
+            <li>
+              <div class="eval-row">
+                <span>Professional conduct</span
+                ><span class="eval-score">2 / 2</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="100"></div>
+              </div>
+            </li>
+            <li>
+              <div class="eval-row">
+                <span>Communication skills</span
+                ><span class="eval-score">3 / 3</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="100"></div>
+              </div>
+            </li>
+            <li>
+              <div class="eval-row">
+                <span>Teamwork</span><span class="eval-score">2 / 2</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="100"></div>
+              </div>
+            </li>
+            <li>
+              <div class="eval-row">
+                <span>Quality of assigned work</span
+                ><span class="eval-score">4 / 4</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="100"></div>
+              </div>
+            </li>
+            <li>
+              <div class="eval-row">
+                <span>Initiative</span><span class="eval-score">2 / 3</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="66"></div>
+              </div>
+            </li>
+            <li>
+              <div class="eval-row">
+                <span>Responsibility</span><span class="eval-score">2 / 2</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="100"></div>
+              </div>
+            </li>
+            <li>
+              <div class="eval-row">
+                <span>Adaptability</span><span class="eval-score">1 / 2</span>
+              </div>
+              <div class="eval-track">
+                <div class="eval-fill" data-width="50"></div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="eval-total">
+            <span class="eval-total-num">18</span>
+            <span class="eval-total-max">/ 20</span>
+          </div>
+
+          <blockquote class="eval-quote">
+            <p>
+              "Pasand was reliable, prepared, and — by the end of six weeks —
+              noticeably more confident running a class on his own. He listens
+              to feedback and applies it the next day, which is rarer than it
+              should be."
+            </p>
+            <cite
+              >Ma'am Zahida Principal Government Syed Panah Ali Shah Model School Jamshoro </cite
+            >
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <span class="section-num">06</span>
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-body reveal">
+          <p class="contact-lede">
+            Want the full portfolio, my report, or to get in touch about the
+            placement? Send a message.
+          </p>
+
+          <form id="contact-form" class="contact-form">
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                style="border-radius: 30px; border: 3px solid rgb(23, 101, 5)"
+                autocomplete="name"
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                style="border-radius: 30px; border: 3px solid rgb(23, 101, 5)"
+                autocomplete="email"
+              />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                style="border-top-left-radius: 30px; border-top-right-radius: 30px; border: 3px solid rgb(23, 101, 5)"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="border-top-left-radius: 30px; border-bottom-right-radius: 30px;  ">Send message</button>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <div class="contact-links">
+            <!-- DEMO: replace with Pasand's real email and profile links -->
+            <a href="mailto:pasandkhanchandio110@gmail.com">click Here to Connect on Email</a>
+            <a href="https://wa.me/+923070055949" target="_blank" rel="noopener"
+              >Contact on add whatsapp icon  </a
+            >
+            whatsapp icon add
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Pasand Khan. Internship portfolio.</p>
+    </footer>
+
+    <button
+      class="back-to-top"
+      id="back-to-top"
+      type="button"
+      aria-label="Back to top"
+    >
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path
+          d="M12 19V5M5 12l7-7 7 7"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
