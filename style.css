@@ -792,3 +792,28 @@ main { position: relative; z-index: 1; }
   }
   .contact-form { display: none; }
 }
+
+/* ==========================================================================
+   Mobile fixes (phones and small tablets only — desktop layout untouched)
+   ========================================================================== */
+@media (max-width: 859px) {
+  /* "Pasand Khan" is wider than the seal's inner ring at the original size */
+  .seal-initials { font-size: 30px; }
+}
+
+@media (max-width: 639px) {
+  /* Work photos carry an inline 430x390 size; on a narrow screen that
+     squashes them. Fill the 4:3 frame and crop instead of stretching. */
+  .photo-slot { overflow: hidden; }
+  .photo-slot img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .contact-links { gap: 16px; flex-direction: column; }
+
+  /* Inline styles on the form fields; keep the textarea from overflowing */
+  .contact-form input,
+  .contact-form textarea { max-width: 100%; box-sizing: border-box; }
+}
