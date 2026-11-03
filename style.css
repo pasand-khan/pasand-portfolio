@@ -649,6 +649,47 @@ main { position: relative; z-index: 1; }
 .work-card p { margin: 0; color: var(--text-soft); font-size: 14px; }
 
 /* ==========================================================================
+   Official internship log (end of the journal section)
+   ========================================================================== */
+.official-log { margin-top: 48px; max-width: 980px; }
+.official-log-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 32px;
+  margin-bottom: 22px;
+}
+.official-log-head h3 { font-size: 20px; margin: 0 0 6px; }
+.official-log-head p { margin: 0; color: var(--text-soft); font-size: 15px; max-width: 60ch; }
+.official-log-pages {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 640px) { .official-log-pages { grid-template-columns: 1fr 1fr; } }
+.log-page {
+  display: block;
+  color: var(--text-soft);
+  text-decoration: none;
+  font-size: 14px;
+}
+.log-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1.5px solid var(--line);
+  border-radius: 4px;
+  background: #fff; /* the scanned page is white in both themes */
+  margin-bottom: 10px;
+  transition: border-color 0.25s var(--ease);
+}
+.log-page:hover img,
+.log-page:focus-visible img { border-color: var(--accent); }
+.log-page:hover span,
+.log-page:focus-visible span { color: var(--accent); }
+
+/* ==========================================================================
    Evaluation
    ========================================================================== */
 .eval-body { max-width: 720px; }
@@ -791,6 +832,8 @@ main { position: relative; z-index: 1; }
     page-break-inside: avoid;
   }
   .contact-form { display: none; }
+  .official-log { page-break-inside: avoid; }
+  .official-log-head .btn { display: none; }
 }
 
 /* ==========================================================================
