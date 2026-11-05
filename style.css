@@ -689,6 +689,12 @@ main { position: relative; z-index: 1; }
 .log-page:hover span,
 .log-page:focus-visible span { color: var(--accent); }
 
+/* Final report + certificate: portrait pages, each with View / Download */
+.final-docs .official-log-pages { max-width: 820px; }
+.final-doc { display: flex; flex-direction: column; }
+.final-doc .log-page img { aspect-ratio: 935 / 1210; object-fit: contain; }
+.final-doc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+
 /* ==========================================================================
    Evaluation
    ========================================================================== */
@@ -833,7 +839,8 @@ main { position: relative; z-index: 1; }
   }
   .contact-form { display: none; }
   .official-log { page-break-inside: avoid; }
-  .official-log-head .btn { display: none; }
+  .official-log-head .btn,
+  .final-doc-actions { display: none; }
 }
 
 /* ==========================================================================
